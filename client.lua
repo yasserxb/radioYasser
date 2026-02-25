@@ -15,7 +15,7 @@ local function addApp()
         identifier  = identifier,
         name        = "Radio",
         description = "Application radio pour communiquer sur des fréquences.",
-        developer   = "LB",
+        developer   = "Yasser212",
         defaultApp  = true,
         size        = 59812,
         images      = {
