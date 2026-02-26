@@ -147,7 +147,7 @@ RegisterNUICallback("renameself", function(data, cb)
 end)
 
 RegisterNUICallback("setRadioVolume", function(data, cb)
-    local vol = tonumber(data.volume)
+    local vol = tonumber(data.volume*100)
     if not vol or vol < 0 or vol > 1 then cb("ok") return end
     exports["pma-voice"]:setRadioVolume(vol)
     exports["pma-voice"]:setCallVolume(vol)
